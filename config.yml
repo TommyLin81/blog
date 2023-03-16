@@ -1,0 +1,104 @@
+baseURL:
+  "https://tommylin.kkbox.io/blog/"
+
+languageCode:
+  "en-us"
+
+title:
+  "Tommy's Blog"
+
+theme:
+  "PaperMod"
+
+Params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "Blog Base on Hugo"
+  ShowShareButtons: false
+  defaultTheme: dark
+  author: Tommy Lin
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+  # comments: false
+  images: ["papermod-cover.png"]
+
+  profileMode:
+    enabled: false
+    title: "This is title"
+    subtitle: "This is subtitle"
+    imageUrl: "https://i.imgur.com/TS6wQoB.jpg"
+    imageTitle: "<title of image as alt>"
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+        - name: Archive
+          url: "/archive"
+        - name: Github
+          url: "https://github.com/"
+        - name: Tags
+          url: tags
+
+  homeInfoParams:
+    Title: "Tommy's Blog"
+    Content: >
+      記錄一波！
+
+  socialIcons:
+    - name: gitlab
+      url: "https://gitlab.kkinternal.com/tommylin/blog"
+    # - name: github
+    #   url: "https://github.com/TommyLin81"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Archive
+      url: archives
+      weight: 2
+    - name: Tags
+      url: tags/
+      weight: 3
+    - name: Categories
+      url: categories/
+      weight: 3
+    - name: Search
+      url: search/
+      weight: 10
+
+taxonomies:
+  category: categories
+  tag: tags
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+    instagram:
+        disabled: false
+        simple: true
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true

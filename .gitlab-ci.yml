@@ -1,0 +1,16 @@
+# vim: sw=2 sts=2 et
+image:
+  name: klakegg/hugo:ext-alpine
+  entrypoint: [""]
+
+pages:
+  script:
+    - git submodule update --init --recursive
+    - hugo
+  artifacts:
+    paths:
+      - public
+  tags:
+    - docker
+  only:
+    - main
