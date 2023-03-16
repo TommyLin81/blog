@@ -14,3 +14,4 @@ pages:
     - docker
   only:
     - main
+    - page
