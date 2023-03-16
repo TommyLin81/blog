@@ -1,5 +1,5 @@
 baseURL:
-  "https://tommylin.kkbox.io/blog/"
+  "https://tommy81.gitlab.io/blog/"
 
 languageCode:
   "en-us"
@@ -49,10 +49,10 @@ Params:
       記錄一波！
 
   socialIcons:
-    - name: gitlab
-      url: "https://gitlab.kkinternal.com/tommylin/blog"
-    # - name: github
-    #   url: "https://github.com/TommyLin81"
+    # - name: gitlab
+    #   url: "https://gitlab.com/tommy81"
+    - name: github
+      url: "https://github.com/TommyLin81"
 
 outputs:
   home:
