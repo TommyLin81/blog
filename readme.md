@@ -1,4 +1,4 @@
-## [Tommy's Blog](https://tommylin.kkbox.io/blog/)
+## [Tommy's Blog](https://tommy81.gitlab.io/blog/)
 
 ### Overview
 
