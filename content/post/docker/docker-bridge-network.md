@@ -1,5 +1,5 @@
 ---
-title: "Docker Dridge Network 紀錄"
+title: "Docker Bridge Network 紀錄"
 date: 2022-05-14T18:43:01+08:00
 description: "介紹 docker network 使用上的一些發現"
 tags: [docker]
@@ -164,7 +164,7 @@ ping: ubuntu_2.ubuntu.com: Name or service not known
 
 ```shell
 # 進入 ubuntu_2
-$ docker exec -it ubuntu_2 bash 
+$ docker exec -it ubuntu_2 bash
 
 # 安裝 ping
 root@ubuntu_2:/$ apt-get update && apt-get install -y iputils-ping
@@ -194,7 +194,7 @@ root@7246b29814ea:/$ cat /etc/resolv.conf
 nameserver 8.8.8.8
 ```
 
-**note：**  
+**note：**
 
 mac 上無法將 host 的 DNS Server 寫到 container 上，需要再另外確認狀況
 
@@ -351,7 +351,7 @@ PING ubuntu_2.ubuntu.com (172.21.0.4) 56(84) bytes of data.
 
 使用 docker-compose 的情況下，預設會自動產生 custom bridge network，
 
-並且將同一個 docker-compose.yml 內的所有 container 放入同一個 custom bridge network。  
+並且將同一個 docker-compose.yml 內的所有 container 放入同一個 custom bridge network。
 
 network 建立的規則為 `{root_directory_name}_{network_name}`
 
