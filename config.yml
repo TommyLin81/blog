@@ -28,18 +28,16 @@ Params:
   images: ["papermod-cover.png"]
 
   profileMode:
-    enabled: false
-    title: "This is title"
-    subtitle: "This is subtitle"
+    enabled: true
+    title: "Tommy's Blog"
+    subtitle: "菜鳥工程師菜起來！"
     imageUrl: "https://i.imgur.com/TS6wQoB.jpg"
     imageTitle: "<title of image as alt>"
     imageWidth: 120
     imageHeight: 120
     buttons:
         - name: Archive
-          url: "/archive"
-        - name: Github
-          url: "https://github.com/"
+          url: archives
         - name: Tags
           url: tags
 
@@ -49,8 +47,8 @@ Params:
       記錄一波！
 
   socialIcons:
-    # - name: gitlab
-    #   url: "https://gitlab.com/tommy81"
+    - name: gitlab
+      url: "https://gitlab.com/tommy81"
     - name: github
       url: "https://github.com/TommyLin81"
 
