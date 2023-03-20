@@ -94,10 +94,8 @@ time_total:  0.526832s
 - `time_starttransfer`：curl 收到 server 回傳第一個 byte 的時間點
 - `time_total`：curl 接收完全部 response 的時間點
 
-![curl-transfer](/images/curl-transfer.png)
+![curl-transfer](/blog/images/curl-transfer.png)
 [picture source](https://blog.cloudflare.com/a-question-of-timing/#timing-with-curl)
-
-</details>
 
 ## Reference
 
