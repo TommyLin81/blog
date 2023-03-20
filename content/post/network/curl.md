@@ -29,9 +29,25 @@ curl --request GET \
 
 ## 透過 write out format 取得傳輸階段的 latency
 
-### example
+### usage
 
-- 透過 shell 建立 `time-format.txt`，檔案內容為需要額外顯示的詳細資訊
+```shell
+curl -w <format> <url>
+```
+
+### example 1
+
+- 透過 `-w "remote_ip: %{remote_ip}"`，直接輸出 format 資訊
+
+```shell
+curl --request GET \
+     -w "remote_ip: %{remote_ip}" \
+     --url "https://api.github.com/octocat"
+```
+
+### example 2
+
+- 建立 `time-format.txt`，檔案內容為顯示資訊的 format
 
 ```shell
 cat > time-format.txt << 'EOF'
@@ -47,7 +63,7 @@ time_total:  %{time_total}s\n
 EOF
 ```
 
-- 透過 `curl -w "@time-format.txt"` 指令一併顯示詳細資訊。
+- 透過 `curl -w "@time-format.txt"` 套用指定檔案內的 format
 
 ```shell
 curl -X "GET" \
