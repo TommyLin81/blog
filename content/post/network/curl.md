@@ -14,13 +14,13 @@ curl 是一個傳輸資料用的小工具，支援非常多的傳輸協議。
 
 ## 基本操作
 
-### Usage
+### usage
 
 ```shell
 curl [options...] <url>
 ```
 
-### Example
+### example
 
 ```shell
 curl --request GET \
@@ -29,11 +29,12 @@ curl --request GET \
 
 ## 透過 write out format 取得傳輸階段的 latency
 
-- 先建立 format file
+### example
 
-```txt
-// .time-format.txt
+- 透過 shell 建立 `time-format.txt`，檔案內容為需要額外顯示的詳細資訊
 
+```shell
+cat > time-format.txt << 'EOF'
 \n----------\n
 time_namelookup:  %{time_namelookup}s\n
 time_connect:  %{time_connect}s\n
@@ -43,9 +44,10 @@ time_redirect:  %{time_redirect}s\n
 time_starttransfer:  %{time_starttransfer}s\n
 ----------\n
 time_total:  %{time_total}s\n
+EOF
 ```
 
-- 透過 curl 取得資源
+- 透過 `curl -w "@time-format.txt"` 指令一併顯示詳細資訊。
 
 ```shell
 curl -X "GET" \
@@ -53,10 +55,7 @@ curl -X "GET" \
      --header "Authorization: Bearer ${GITHUB_TOKEN}" \
      "https://api.github.com/user"
 
-{
-     "login": "TommyLin81",
-     ...
-}
+// ...
 ----------
 time_namelookup:  0.007930s
 time_connect:  0.092922s
@@ -68,6 +67,21 @@ time_starttransfer:  0.526371s
 time_total:  0.526832s
 
 ```
+
+### 名詞解釋
+
+- `time_namelookup`：DNS 完成域名（api.github.com）解析的時間點
+- `time_connect`：TCP 完成連線的時間點
+- `time_appconnect`：SSL/SSH/etc 完成交握與連線的時間點
+- `time_pretransfer`：所有連線都完成，準備傳輸第一個資料的時間點
+- `time_redirect`：完成所有轉址的時間點
+- `time_starttransfer`：curl 收到 server 回傳第一個 byte 的時間點
+- `time_total`：curl 接收完全部 response 的時間點
+
+![curl-transfer](/static/curl-transfer.png)
+[picture source](https://blog.cloudflare.com/a-question-of-timing/#timing-with-curl)
+
+</details>
 
 ## Reference
 
