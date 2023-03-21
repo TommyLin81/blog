@@ -95,7 +95,7 @@ time_total:  0.526832s
 - `time_total`：curl 接收完全部 response 的時間點
 
 ![curl-transfer](/blog/images/curl-transfer.png)
-[picture source](https://blog.cloudflare.com/a-question-of-timing/#timing-with-curl)
+[picture resource](https://blog.cloudflare.com/a-question-of-timing/#timing-with-curl)
 
 ## Reference
 
