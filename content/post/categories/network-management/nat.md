@@ -1,6 +1,7 @@
 ---
 title: "NAT"
 date: 2023-06-12T09:30:00+08:00
+description: "Network Address Translator 的簡易介紹"
 tags: [network]
 categories: [Network Management]
 ---
