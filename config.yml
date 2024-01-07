@@ -10,11 +10,13 @@ title:
 theme:
   "PaperMod"
 
+hasCJKLanguage: true
+
 Params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Blog Base on Hugo"
   ShowShareButtons: false
-  defaultTheme: dark
+  defaultTheme: light
   author: Tommy Lin
   ShowReadingTime: true
   # disableSpecial1stPost: true
