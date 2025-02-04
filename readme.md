@@ -1,17 +1,17 @@
-## [Tommy's Blog](https://tommy81.gitlab.io/blog/)
+# Tommy's Blog
 
-### Overview
+## Document
 
-[TOC]
+使用 hugo + [hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod/tree/master) themes
 
-### Document
+紀錄學習到的技術、書籍心得的分享
 
-紀錄工作上遇到覺得不錯的東西
-
-### Requirement
+## Requirement
 
 1. [Git](https://git-scm.com/downloads)
 2. [Hugo](https://gohugo.io/getting-started/installing/)
+
+## Usage
 
 ### How to Build
 
@@ -27,6 +27,13 @@ cd blog
 
 ```shell
 git submodule update --init --recursive
+```
+
+**(optional) update submodule to latest version:**
+
+```shell
+git submodule sync --recursive
+git submodule update --init --recursive --remote
 ```
 
 **run local sites：**
