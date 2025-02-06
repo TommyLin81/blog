@@ -2,9 +2,9 @@
 
 ## Document
 
-使用 hugo + [hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod/tree/master) themes
+Using [Hugo](https://gohugo.io/getting-started/installing/) + [hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod/tree/master) theme.
 
-紀錄學習到的技術、書籍心得的分享
+Recording learned technologies and sharing book reviews.
 
 ## Requirement
 
@@ -18,7 +18,7 @@
 **get project：**
 
 ```shell
-git clone git@gitlab.kkinternal.com:tommylin/blog.git
+git clone https://github.com/TommyLin81/blog.git
 
 cd blog
 ```
@@ -46,7 +46,7 @@ hugo server -D
 
 <http://localhost:1313/blog/>
 
-### How to Add New Content
+### How to Add a New Content
 
 **add new Content：**
 
