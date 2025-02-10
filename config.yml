@@ -32,7 +32,7 @@ Params:
   profileMode:
     enabled: true
     title: "Tommy's Blog"
-    subtitle: "菜鳥工程師菜起來！"
+    subtitle: "Former backend engineer at KKBOX with a strong passion for Golang and some knowledge of infrastructure. Currently actively learning machine learning technologies."
     imageUrl: "https://i.imgur.com/TS6wQoB.jpg"
     imageTitle: "<title of image as alt>"
     imageWidth: 120
