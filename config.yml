@@ -49,10 +49,10 @@ Params:
       記錄一波！
 
   socialIcons:
-    - name: gitlab
-      url: "https://gitlab.com/tommy81"
     - name: github
       url: "https://github.com/TommyLin81"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/%E5%A8%81%E5%84%92-%E6%9E%97-0389351a4/"
 
 outputs:
   home:
