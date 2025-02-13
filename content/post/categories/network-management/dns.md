@@ -14,7 +14,7 @@ categories: [Network Management]
 
 本章節要介紹的 DNS 就是負責將 domain name（`google.com`）轉換成對應 IP Address 的服務。
 
-## Chat Flow
+## DNS Query Flow
 
 ![curl-transfer](/blog/images/dns.png)
 [picture resource](https://www.cloudflare.com/zh-tw/learning/dns/what-is-dns/)
