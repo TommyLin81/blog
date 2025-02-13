@@ -14,7 +14,7 @@ tags: [github, InfoSec]
 下圖就是將 `user.email` 改為 Linux 之父 [Linus Torvalds](https://github.com/torvalds)的信箱，並提交隨便一份 commit，可以看到 Github 上確實顯示了這是來自 Linux 之父提交的 commit，不過 `Unverified` tag 提醒了大家需要好好審視這個 commit 來源的真實性。
 ![linxu_torvalds_is_here](/blog/images/linxu_torvalds_is_here.png)
 
-## Setting Step
+## Setup Guide
 
 1. 先去 github.com setting > SSH and GPG keys，從 `New SSH key` 新增一個 signing type 的 key
 2. terminal 新增三個 git config `user.signingkey`、`gpg.format`、`commit.gpgsign`
