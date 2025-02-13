@@ -54,6 +54,10 @@ Params:
     - name: linkedin
       url: "https://www.linkedin.com/in/%E5%A8%81%E5%84%92-%E6%9E%97-0389351a4/"
 
+  analytics:
+    google:
+      SiteVerificationTag: 3ZVBoKL80JE0skn0_jQ4TkDZGwquVY7bAnhA_y9LLvY
+
 outputs:
   home:
     - HTML
