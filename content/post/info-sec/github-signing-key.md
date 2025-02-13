@@ -11,7 +11,7 @@ tags: [github, InfoSec]
 
 使用者本人在自己的帳號下向 Github 註冊 Signing Key（`SSH Key` or `GPG Key`），並在之後的 commit 都用這把 key 簽名，Github 會對 commit 上的簽名進行核對，只有本人簽過的 commit 才會被標注 `Verified`
 
-下圖就是將 `user.email` 改為 Linux 之父 [Linus Torvalds](https://github.com/torvalds)的信箱，並提交隨便一份 commit，可以看到 Github 上確實顯示了這是來自 Linux 之父提交的 commit，不過 `Unverified` tag 提醒了大家需要好好審視這個 commit 的真實來源。
+下圖就是將 `user.email` 改為 Linux 之父 [Linus Torvalds](https://github.com/torvalds)的信箱，並提交隨便一份 commit，可以看到 Github 上確實顯示了這是來自 Linux 之父提交的 commit，不過 `Unverified` tag 提醒了大家需要好好審視這個 commit 來源的真實性。
 ![linxu_torvalds_is_here](/blog/images/linxu_torvalds_is_here.png)
 
 ## Setting Step
