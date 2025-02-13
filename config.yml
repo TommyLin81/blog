@@ -16,7 +16,7 @@ Params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Blog Base on Hugo"
   ShowShareButtons: false
-  defaultTheme: light
+  defaultTheme: dark
   author: Tommy Lin
   ShowReadingTime: true
   # disableSpecial1stPost: true
