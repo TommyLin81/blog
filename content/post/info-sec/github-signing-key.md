@@ -17,6 +17,7 @@ tags: [github, InfoSec]
 ## Setup Guide
 
 1. 先去 github.com setting > SSH and GPG keys，從 `New SSH key` 新增一個 signing type 的 key
+
 2. terminal 新增三個 git config `user.signingkey`、`gpg.format`、`commit.gpgsign`
 
 ```sh
@@ -26,6 +27,8 @@ $ git config --global gpg.format=ssh
 # commit 指令預設進行簽名
 $ git config --global commit.gpgsign=true
 ```
+
+3. 簽署一個新的 commit 並推到 github repository，在 commit 頁面即可看到剛剛推的 commit 顯示 `Verified`
 
 ## (Optional) Verify Signature in Local
 
@@ -42,14 +45,14 @@ tommylin@gmail.com ssh-ed25519 AAAAC3Nza......
 2. terminal 新增 git config `gpg.ssh.allowedsignersfile=<your allowed_signers file>`
 
 ```sh
-git config --global gpg.ssh.allowedsignersfile=~/.ssh/allowed_signers
+$ git config --global gpg.ssh.allowedsignersfile=~/.ssh/allowed_signers
 ```
 
 3. 新增一個 commit 測試簽名是否合法
 
 ```sh
-git commit -m 'test signature'
-git log --show-signature -1
+$ git commit -m 'test signature'
+$ git log --show-signature -1
 ```
 
 ## Reference
