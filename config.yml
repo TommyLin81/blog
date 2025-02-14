@@ -48,7 +48,7 @@ Params:
     enabled: true
     title: "Tommy's Blog"
     subtitle: "Welcome to Tommy's blog, documenting my journey in backend development, Golang, machine learning, and in-depth book reviews."
-    imageUrl: "https://i.imgur.com/TS6wQoB.jpg"
+    imageUrl: "scared_seal.jpeg"
     imageTitle: "<title of image as alt>"
     imageWidth: 120
     imageHeight: 120
