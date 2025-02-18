@@ -10,6 +10,11 @@ title:
 theme:
   "PaperMod"
 
+sitemap:
+  changefreq: monthly
+  disable: false
+  priority: 1.0
+
 hasCJKLanguage: true
 
 enableRobotsTXT: true
