@@ -1,4 +1,4 @@
-# [Tommy's Blog](https://tommylin81.github.io/blog/)
+# [Tommy's Blog](https://blog.tommylin.tech/)
 
 ## Document
 
