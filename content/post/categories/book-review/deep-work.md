@@ -8,7 +8,7 @@ categories: [BookReview]
 
 ## Description
 
-{{< figure src="/blog/images/deep-work.jpeg" alt="Deep Work" height="500" >}}
+{{< figure src="/images/deep-work.jpeg" alt="Deep Work" height="500" >}}
 
 這篇文章是我在閱讀完《Deep Work》後，將各個章節中的重點整理出來，並加上個人心得的分享～
 

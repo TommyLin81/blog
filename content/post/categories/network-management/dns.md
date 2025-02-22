@@ -16,7 +16,7 @@ categories: [Network Management]
 
 ## DNS Query Flow
 
-![curl-transfer](/blog/images/dns.png)
+![curl-transfer](/images/dns.png)
 [picture resource](https://www.cloudflare.com/zh-tw/learning/dns/what-is-dns/)
 
 0. 在瀏覽器輸入 [`https://google.com`](http://google.com) 後，Linux 系統會先去 `/etc/hosts` 文件查看是否有對應的 IP 位址。
