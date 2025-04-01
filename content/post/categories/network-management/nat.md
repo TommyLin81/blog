@@ -12,7 +12,7 @@ NAT（Network Address Translator）是為了解決 IPv4 不夠用所延伸出的
 
 NAT 服務會建立一張對應表，將同一組 Public IP 的不同 port number 分配給內部網路的所有 Private IP，
 
-當持有 Private IP 的內部網路端發出訪問 Internet 的請求時，該請求就會透過 NAT 服務將請求來源的 Private IP 轉為對應的 Public IP + prot number 並接續進行請求。
+當持有 Private IP 的內部網路端發出訪問 Internet 的請求時，該請求就會透過 NAT 服務將請求來源的 Private IP 轉為對應的 Public IP + port number 並接續進行請求。
 
 ## NAT 分類
 
@@ -28,7 +28,7 @@ NAT 主要分為三類
 
 ### 動態 NAT
 
-將 Private IP 位址對應到一個 Public IP 位址池中的某個位址。當 Private IP 位址需要與外部網路通信時，NAT 設備從 Public IP 位址池中選擇一個尚未使用的 IP 位址進行對應。
+將 Private IP 位址對應到一個 Public IP 位址池中的某個位址。當 Private IP 位址需要與外部網路通信時，NAT 裝置從 Public IP 位址池中選擇一個尚未使用的 IP 位址進行對應。
 
 ### PAT（Port Address Translation）
 
@@ -40,22 +40,24 @@ PAT 不僅僅轉換 IP 位址，還會轉換 TCP 或 UDP 的 port number；
 
 ## 範例
 
-### step.1 請求發起
+### Step 1：請求發起
 
-當內部設備（家庭或公司網路內的使用者）想要訪問外部網路時它會創建一個包含來源 IP 地址（設備的 Private IP）和 port number 的封包。
+當內部裝置（家庭或公司網路內的使用者）想要訪問外部網路時它會創建一個包含來源 IP 位址（裝置的 Private IP）和 port number 的封包。
 
-### step.2 轉換
+### Step 2：轉換
 
-這個封包到達執行 PAT 的設備（路由器或防火牆）時，PAT 設備會把封包的來源 IP 地址更改為 Public IP 地址，並同步更改 port number，
+這個封包到達執行 PAT 的裝置（路由器或防火牆）時，PAT 裝置會把封包的來源 IP 位址更改為 Public IP 位址，並同步更改 port number，
 
-新的 port number 是由 PAT 設備從可用端口池中選擇的；PAT 設備會在 NAT 表中新增一筆資料，記錄這個 Private IP + port number 對應到的 Public IP + port number。
+新的 port number 是由 PAT 裝置從可用端口池中選擇的；PAT 裝置會在 NAT 表中新增一筆資料，記錄這個 Private IP + port number 對應到的 Public IP + port number。
 
-### step.3 請求傳遞
+### Step 3：請求傳遞
 
-PAT 設備會將修改後的數據包發送到互聯網。
+PAT 裝置會將修改後的封包發送到網際網路。
 
-### step.4 響應返回
+### Step 4：響應返回
 
-當響應返回到達 PAT 設備時，PAT 設備會查找 NAT 表，找到與這個 Public IP + port number 相對應的 Private IP + prot number。
+當響應返回到達 PAT 裝置時，PAT 裝置會查找 NAT 表，找到與這個 Public IP + port number 相對應的 Private IP + port number。
 
-並將響應封包的目標 IP 地址和目標端口號更改為這個內部 IP 地址和端口號，最後發送封包給該內部設備。
+並將響應封包的目標 IP 位址和目標端口號更改為這個內部 IP 位址和端口號，最後發送封包給該內部裝置。
+
+![nat](/images/nat.png)
