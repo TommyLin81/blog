@@ -14,6 +14,9 @@ This is a uv quick cheat sheet.
 # List available and installed Python versions
 uv python list
 
+# List all available Python versions that can be installed
+uv python list --all-versions
+
 # Install Python 3.14
 uv python install 3.14
 ```
@@ -23,6 +26,9 @@ uv python install 3.14
 ```bash
 # Create new project using Python 3.14
 uv init my-project --python 3.14
+
+# Pin the Python version to 3.14 for the current project (creates/updates .python-version file)
+uv python pin 3.14
 
 # Add pandas as a dependency
 uv add pandas
