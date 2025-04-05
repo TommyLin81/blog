@@ -67,20 +67,20 @@ uv tree
 ## Python CLI Tool Management
 
 ```bash
+# Add a CLI tool
+uv tool install jupyterlab
+
 # List available Python CLI tools managed by uv
 uv tool list
 
-# Add a CLI tool like ruff (e.g. formatter, linter)
-uv tool add ruff
-
 # Remove the installed tool
-uv tool remove ruff
+uv tool uninstall jupyterlab
 
-# Upgrade all installed tools
-uv tool upgrade
+# Upgrade the installed tool
+uv tool upgrade jupyterlab
 
-# Run the tool (like ruff) inside uv environment
-uvx ruff check .
+# Run jupyterlab from PyPI package using uvx
+uvx --from jupyterlab jupyter-lab
 ```
 
 ## uv Maintenance
