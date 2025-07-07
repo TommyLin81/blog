@@ -64,7 +64,7 @@ MCP Client 和 MCP Server 之間有兩種通訊方式：
 - cloud APIs
 - distributed system
 
-## What Make an MCP Successful
+## What Makes an MCP Successful
 
 透過觀察市面上實用的 MCP Server，整理出一些符合市場需求的 MCP 應該具備的幾個特點：
 
